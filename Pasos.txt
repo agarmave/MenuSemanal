@@ -5,8 +5,9 @@ Funcionalidades a implementar
 - Que se añadan platos al calendario -> DONE
 - Que cada plato tenga sus ingredientes -> DONE
 - Que el json esté externalizado -> DONE
+- Diferenciar entre COMIDAS Y CENAS -> DONE
+- Desplegar/Comprimir Comidas y Cenas -> DONE
 
-- Diferenciar entre COMIDAS Y CENAS
 - Poder editar platos
 - Poder añadir platos
 - Que si "sacas" un plato del calendario lo puedas volver a poner dentro de "platos" (que al soltar se reordenen?)
