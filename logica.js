@@ -1,5 +1,5 @@
 //Aquí van los platos
-var platosJSON = {
+/* var platosJSON = {
   "platos": [
     {
       "nombre": "Perrito caliente",
@@ -102,13 +102,33 @@ var platosJSON = {
       "ingredientes": ["pollo", "sazonador fajitas Mercadona", "pimientos", "cebolla", "queso rallado"]
     }
   ]
-};
+}; */
+
 // Objeto para realizar un seguimiento de platos e ingredientes
 var listaPlatos = {};
 
 document.addEventListener("DOMContentLoaded", function() {
-	// leemos el json
-	platosJSON.platos.forEach(plato => {
+	fetch("platos.json")
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    platosJSON.platos.forEach(plato => {
+      console.log(plato);
+      const contenedorPlatos = document.getElementById('columnaPlatos');
+      const platoDiv = document.createElement('div');
+          platoDiv.className = 'plato';
+          platoDiv.addEventListener('mousedown', function(event) {  dragElement(event);});
+          platoDiv.textContent = plato.nombre;
+  
+          contenedorPlatos.appendChild(platoDiv);
+      });
+  })
+  .catch(error => {
+    console.error('Error al leer el json:', error);
+  });
+  
+  // leemos el json OLD
+	/* platosJSON.platos.forEach(plato => {
 		console.log(plato);
 		const contenedorPlatos = document.getElementById('columnaPlatos');
 		const platoDiv = document.createElement('div');
@@ -117,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	      platoDiv.textContent = plato.nombre;
 
 	      contenedorPlatos.appendChild(platoDiv);
-		});
+		}); */
 });
 
 //Función drag&drop

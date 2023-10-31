@@ -1,0 +1,104 @@
+var platosJSON = {
+    "platos": [
+      {
+        "nombre": "Perrito caliente",
+        "ingredientes": ["pan de perrito", "salsa mostaza&miel Mercadona", "beacon grueso", "salchichas baviera/ibericas", "queso curado en lonchas", "cebolla frita"]
+      },
+      {
+        "nombre": "Alitas de pollo",
+        "ingredientes": ["alitas de pollo", "pimientos", "cebolla", "tomate frito", "tomate troceado"]
+      },
+      {
+        "nombre": "Ensalada César",
+        "ingredientes": ["lechuga", "pavo", "picatostes", "queso parmesano", "salsa César"]
+      },
+      {
+        "nombre": "Sandwitch mixto",
+        "ingredientes": ["lechuga", "beacon grueso", "queso en lonchas", "cebolla frita", "salsa César", "huevos"]
+      },
+      {
+        "nombre": "Pastrami",
+        "ingredientes": ["lechuga", "pastrami", "queso en lonchas", "cebolla frita", "salsa César"]
+      },
+      {
+        "nombre": "Pasta tomate",
+        "ingredientes": ["salchichas baviera/ibericas", "tomate frito", "queso rallado", "zanahoria", "cebolla"]
+      },
+      {
+        "nombre": "Pasta nata",
+        "ingredientes": ["nata", "jamon york", "queso rallado", "zanahoria", "cebolla", "huevos"]
+      },
+      {
+        "nombre": "Nachos",
+        "ingredientes": ["pimientos", "cebolla", "queso rallado", "tomate frito", "doritos queso"]
+      },
+      {
+        "nombre": "Coliflor",
+        "ingredientes": ["coliflor"]
+      },
+      {
+        "nombre": "Costillas",
+        "ingredientes": ["costillas cerdo"]
+      },
+      {
+        "nombre": "Chop Suei",
+        "ingredientes": ["pollo", "cebolla", "pimientos", "salsa agridulce", "piña lata", "setas"]
+      },
+      {
+        "nombre": "Berenjenas miel",
+        "ingredientes": ["berenjena", "harina tempura"]
+      },
+      {
+        "nombre": "Pollo curry",
+        "ingredientes": ["pollo", "pimientos", "cebolla", "zanahoria", "setas", "tomate frito"]
+      },
+      {
+        "nombre": "Raviolis calabaza",
+        "ingredientes": ["raviolis calabaza", "nata", "setas", "queso parmesano rallado"]
+      },
+      {
+        "nombre": "Pulpo horno",
+        "ingredientes": ["pulpo cocido", "patatas"]
+      },
+      {
+        "nombre": "Tosta gulas",
+        "ingredientes": ["gulas"]
+      },
+      {
+        "nombre": "Lacon con queso",
+        "ingredientes": ["lacón", "queso tetilla"]
+      },
+      {
+        "nombre": "Pizza casera",
+        "ingredientes": ["masa pizza Mercadona", "tomate frito", "mozzarella", "pollo desmigado", "beacon tacos", "jamon york", "nata", "tomates", "queso rallado", "mozzarella rallada"]
+      },
+      {
+        "nombre": "Ensal Capresse",
+        "ingredientes": ["mozzarella", "albahaca fresca", "tomate"]
+      },
+      {
+        "nombre": "Pollo Asado",
+        "ingredientes": ["pollo preparado Mercadona / Coquellet"]
+      },
+      {
+        "nombre": "Filetes Costco",
+        "ingredientes": ["filetes Costco"]
+      },
+      {
+        "nombre": "Presa ibérica",
+        "ingredientes": ["presa iberica", "patatas baby"]
+      },
+      {
+        "nombre": "Pat. FosterHollywood",
+        "ingredientes": ["patatas", "beacon tacos", "queso rallado", "yogurt griego", "cebollino", "limon"]
+      },
+      {
+        "nombre": "Durum casero",
+        "ingredientes": ["durum mercadona", "tortitas maiz", "queso rallado", "lechuga", "tomate", "queso feta", "cebolla"]
+      },
+      {
+        "nombre": "Fajitas",
+        "ingredientes": ["pollo", "sazonador fajitas Mercadona", "pimientos", "cebolla", "queso rallado"]
+      }
+    ]
+  };
