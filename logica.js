@@ -108,7 +108,7 @@
 var listaPlatos = {};
 
 document.addEventListener("DOMContentLoaded", function() {
-	fetch("platos.json")
+	fetch("https://agarmave.github.io/MenuSemanal/platos.json")
   .then(response => response.json())
   .then(data => {
     console.log(data);

@@ -1,4 +1,4 @@
-var platosJSON = {
+{
     "platos": [
       {
         "nombre": "Perrito caliente",
@@ -101,4 +101,4 @@ var platosJSON = {
         "ingredientes": ["pollo", "sazonador fajitas Mercadona", "pimientos", "cebolla", "queso rallado"]
       }
     ]
-  };
+}
