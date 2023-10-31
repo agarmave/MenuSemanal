@@ -1,0 +1,11 @@
+Funcionalidades a implementar
+
+- Catálogo platos lateral -> DONE
+- Calendario semanal -> DONE
+- Que se añadan platos al calendario -> DONE
+- Que cada plato tenga sus ingredientes -> DONE
+
+- Diferenciar entre COMIDAS Y CENAS
+- Poder editar platos
+- Poder añadir platos
+- 
