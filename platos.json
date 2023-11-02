@@ -2,102 +2,127 @@
     "platos": [
       {
         "nombre": "Perrito caliente",
+        "horario":"cena",
         "ingredientes": ["pan de perrito", "salsa mostaza&miel Mercadona", "beacon grueso", "salchichas baviera/ibericas", "queso curado en lonchas", "cebolla frita"]
       },
       {
         "nombre": "Alitas de pollo",
+        "horario":"comida",
         "ingredientes": ["alitas de pollo", "pimientos", "cebolla", "tomate frito", "tomate troceado"]
       },
       {
         "nombre": "Ensalada César",
+        "horario":"comida",
         "ingredientes": ["lechuga", "pavo", "picatostes", "queso parmesano", "salsa César"]
       },
       {
         "nombre": "Sandwitch mixto",
+        "horario":"cena",
         "ingredientes": ["lechuga", "beacon grueso", "queso en lonchas", "cebolla frita", "salsa César", "huevos"]
       },
       {
         "nombre": "Pastrami",
+        "horario":"cena",
         "ingredientes": ["lechuga", "pastrami", "queso en lonchas", "cebolla frita", "salsa César"]
       },
       {
         "nombre": "Pasta tomate",
+        "horario":"comida",
         "ingredientes": ["salchichas baviera/ibericas", "tomate frito", "queso rallado", "zanahoria", "cebolla"]
       },
       {
         "nombre": "Pasta nata",
+        "horario":"comida",
         "ingredientes": ["nata", "jamon york", "queso rallado", "zanahoria", "cebolla", "huevos"]
       },
       {
         "nombre": "Nachos",
+        "horario":"comida",
         "ingredientes": ["pimientos", "cebolla", "queso rallado", "tomate frito", "doritos queso"]
       },
       {
         "nombre": "Coliflor",
+        "horario":"comida",
         "ingredientes": ["coliflor"]
       },
       {
         "nombre": "Costillas",
+        "horario":"comida",
         "ingredientes": ["costillas cerdo"]
       },
       {
         "nombre": "Chop Suei",
+        "horario":"comida",
         "ingredientes": ["pollo", "cebolla", "pimientos", "salsa agridulce", "piña lata", "setas"]
       },
       {
         "nombre": "Berenjenas miel",
+        "horario":"cena",
         "ingredientes": ["berenjena", "harina tempura"]
       },
       {
         "nombre": "Pollo curry",
+        "horario":"comida",
         "ingredientes": ["pollo", "pimientos", "cebolla", "zanahoria", "setas", "tomate frito"]
       },
       {
         "nombre": "Raviolis calabaza",
+        "horario":"comida",
         "ingredientes": ["raviolis calabaza", "nata", "setas", "queso parmesano rallado"]
       },
       {
         "nombre": "Pulpo horno",
+        "horario":"cena",
         "ingredientes": ["pulpo cocido", "patatas"]
       },
       {
         "nombre": "Tosta gulas",
+        "horario":"cena",
         "ingredientes": ["gulas"]
       },
       {
         "nombre": "Lacon con queso",
+        "horario":"cena",
         "ingredientes": ["lacón", "queso tetilla"]
       },
       {
         "nombre": "Pizza casera",
+        "horario":"comida",
         "ingredientes": ["masa pizza Mercadona", "tomate frito", "mozzarella", "pollo desmigado", "beacon tacos", "jamon york", "nata", "tomates", "queso rallado", "mozzarella rallada"]
       },
       {
         "nombre": "Ensal Capresse",
+        "horario":"cena",
         "ingredientes": ["mozzarella", "albahaca fresca", "tomate"]
       },
       {
         "nombre": "Pollo Asado",
+        "horario":"comida",
         "ingredientes": ["pollo preparado Mercadona / Coquellet"]
       },
       {
         "nombre": "Filetes Costco",
+        "horario":"comida",
         "ingredientes": ["filetes Costco"]
       },
       {
         "nombre": "Presa ibérica",
+        "horario":"comida",
         "ingredientes": ["presa iberica", "patatas baby"]
       },
       {
         "nombre": "Pat. FosterHollywood",
+        "horario":"comida",
         "ingredientes": ["patatas", "beacon tacos", "queso rallado", "yogurt griego", "cebollino", "limon"]
       },
       {
         "nombre": "Durum casero",
+        "horario":"comida",
         "ingredientes": ["durum mercadona", "tortitas maiz", "queso rallado", "lechuga", "tomate", "queso feta", "cebolla"]
       },
       {
         "nombre": "Fajitas",
+        "horario":"comida",
         "ingredientes": ["pollo", "sazonador fajitas Mercadona", "pimientos", "cebolla", "queso rallado"]
       }
     ]
