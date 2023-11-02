@@ -5,15 +5,26 @@
 </head>
 	<body>
 		<script src="logica.js"></script>
+		<script src="funciones/acciones.js"></script>
+		<script src="funciones/calendario.js"></script>
 		<h1>Menú semanal</h1>
 		<div class="row">
 			<div class="col-sm-2">
 				<!--Aquí irán las cajas con los platos -->
-				<h2 class="tituloPlatos">Platos a elegir</h2>
+				<h2 class="tituloPlatos">Comidas
+					<button class="flecha" id="botonOcultarComidas" onclick="ocultarColumnaPlatos('columnaPlatos', 'botonOcultarComidas','botonMostrarComidas')">▲</button>
+					<button class="flecha" id="botonMostrarComidas" onclick="mostrarColumnaPlatos('columnaPlatos','botonMostrarComidas','botonOcultarComidas')" style="display: none;">▼</button>
+				</h2>				
 				<div id="columnaPlatos" class="columnaPlatos"></div>
 				<!--<div class="plato">Plato1</div>
 				<div class="plato">Plato2</div>
 				<div class="plato">Plato3</div> -->
+				<h2 class="tituloPlatos">Cenas
+					<button class="flecha" id="botonOcultarCenas" onclick="ocultarColumnaPlatos('columnaPlatosCenas', 'botonOcultarCenas','botonMostrarCenas')">▲</button>
+					<button class="flecha" id="botonMostrarCenas" onclick="mostrarColumnaPlatos('columnaPlatosCenas','botonMostrarCenas','botonOcultarCenas')" style="display: none;">▼</button>
+				</h2>
+				<div id="columnaPlatosCenas" class="columnaPlatos"></div>
+				<div id="columnaPlatosOcultos" style="display: none;"></div>
 			</div>
 			<div id="seccionCalendario" class="seccionCalendario col-sm-10">
 				<!--Aquí irán las cajas de los días de la semana -->

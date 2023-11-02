@@ -12,7 +12,7 @@ h2{
 	font-size: 24px;
 }
 .columnaPlatos{
-	padding-left: 40px;
+	padding-left: 20px;
 	height: 300px;
 	overflow-y: auto; 
 }
@@ -58,3 +58,17 @@ h2{
 #semana{
 	height: 200px;
 }	
+.boton-desplegable {
+	background-color: lightgray;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+.flecha {
+	font-size: 15px;
+	margin-left: 5px;
+}
+.oculto{
+	display: none;
+}
