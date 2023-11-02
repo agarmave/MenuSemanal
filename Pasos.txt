@@ -13,4 +13,7 @@ Funcionalidades a implementar
 - Poder editar platos -> in progress
 - Poder añadir platos -> in progress
 - Poder eliminar platos -> in progresss
+- Mandar listado de ingredientes a app que luego los mande a lista de la compra de google home
+- Botón para poner "bonito" el calendario?
+- Mandar a algún sitio el calendario
 
