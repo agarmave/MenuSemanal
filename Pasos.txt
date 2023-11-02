@@ -10,6 +10,11 @@ Funcionalidades a implementar
 - Que si "sacas" un plato del calendario lo puedas volver a poner dentro de "platos" (que al soltar se reordenen?) -> DONE
 - Botón limpiar calendario -> DONE
 
+- Crear modal para añadir y editar platos
+    - Caja Nombre del plato
+    - Cajas con/para cada ingrediente
+    - boton + para añadir caja
+    - boton "guardar"
 - Poder editar platos -> in progress
 - Poder añadir platos -> in progress
 - Poder eliminar platos -> in progresss
