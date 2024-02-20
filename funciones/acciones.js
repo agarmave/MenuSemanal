@@ -2,32 +2,12 @@
 function dragElement(event) {
     const element = event.target;
     var elementClone;
-    
-    //ocultamos el plato original 
-    //obtenemos las coordenadas fijas del plato original
-    //buscamos el plato oculto con el mismo nombre
-    //lo ponemos en la posición del plato original
+
     
     element.classList.add("platoClicado");
 
-    //localizamos el div equivalente oculto
-    const contenedor = document.getElementById('columnaPlatosOcultos'); // Obtén el elemento contenedor por su ID
-    const textoBuscado = element.textContent; // El texto que deseas encontrar
-    const divs = contenedor.getElementsByTagName('div'); // Obtén todos los elementos <div> dentro del contenedor
-
-    for (const divBuscado of divs) {
-        if (divBuscado.textContent.includes(textoBuscado)) {
-            elementClone=divBuscado;
-        }
-    }
-    //Ahora hay que ocultar el element original
-    //Hay que colocar el clonado en la posición del original
-    //hay que darle la clase de "clicado"
-    //Y luego si el clonado está en el calendario la logica
-    //Y si sale del calendario deshacer todo esto (para que vuelva a ponerse el clonado donde sea y el original se muestre)
-
-
     comprobarSiEstaEnCalendario(element,"coger");
+    comprobarSiEstaEnEliminar(element,"coger");
     const offsetX = event.clientX - element.getBoundingClientRect().left;
     const offsetY = event.clientY - element.getBoundingClientRect().top;
   
@@ -46,7 +26,11 @@ function dragElement(event) {
   
     function stopMoving() {
         element.classList.remove("platoClicado");
-      comprobarSiEstaEnCalendario(element,"soltar");
+      if (!comprobarSiEstaEnCalendario(element,"soltar")){
+        comprobarSiEstaEnColumnasPlatos(element);
+      }
+      comprobarSiEstaEnEliminar(element,"soltar");
+      
       document.onmousemove = null;
       document.onmouseup = null;
     }
@@ -64,3 +48,53 @@ function dragElement(event) {
     document.getElementById(idFlechaOcultar).style.display="none";
     document.getElementById(idDivFlechaMostrar).style.display="inline-block";
    }
+   // Función para verificar la superposición
+   function seSuperpone(elemento1, elemento2) {
+    var rect1 = elemento1.getBoundingClientRect();
+    var rect2 = elemento2.getBoundingClientRect();
+
+    return !(
+        rect1.right < rect2.left ||
+        rect1.left > rect2.right ||
+        rect1.bottom < rect2.top ||
+        rect1.top > rect2.bottom
+    );
+}
+//Función para obtener los ingredientes 
+function buscarIngredientesPorNombre(nombrePlato) {
+    debugger;
+    for (var i = 0; i < platosJSON.platos.length; i++) {
+      if (platosJSON.platos[i].nombre === nombrePlato) {
+        return platosJSON.platos[i].ingredientes;
+      }
+    }
+    return null; // Retorna null si no se encuentra el plato
+  }
+  // FIN Función para obtener los ingredientes
+  
+  // Función para buscar ingredientes por nombre
+  function buscarIngredientesPorNombre(nombrePlato) {
+    for (var i = 0; i < platosJSON.platos.length; i++) {
+      if (platosJSON.platos[i].nombre === nombrePlato) {
+        return platosJSON.platos[i].ingredientes;
+      }
+    }
+    return null; // Retorna null si no se encuentra el plato
+  }
+  //FIN Función para buscar ingredientes por nombre
+ 
+  function mostrarBorrarPlato(){
+    document.getElementById("eliminarPlato").classList.remove("oculto");
+    document.getElementById("botonMostrarEliminarPlato").classList.add("oculto");
+  }
+  function borrarPlato(){
+    //Comprobamos si hay plato
+    //si hay plato 
+        //borrar plato del html
+        //borrar plato del json
+        //borrar plato del servidor?
+            //crear toquen para editar
+        //ocultar borrar plato
+        //mostrar boton general de borrado
+    //si no hay plato mensaje de error de añade un plato
+  }

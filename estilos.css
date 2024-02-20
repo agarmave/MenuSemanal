@@ -70,5 +70,79 @@ h2{
 	margin-left: 5px;
 }
 .oculto{
-	display: none;
+	display: none !important;
 }
+.listaDeLaCompra{
+	background-color: rgb(255, 255,204);
+}
+
+  
+.listaDeLaCompra h2{
+	padding-top: 10px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+.listaDeLaCompra ul{
+	padding:0 0 20px 0;
+}
+.listaDeLaCompra li{
+	margin-left: 2rem;
+	border-bottom: solid 0.25px #B4E1F5;
+	list-style: none;
+    margin-bottom: 0.25rem;
+}
+#cajaListaCompra{
+	border: 1px solid #ccc;
+    border-top: none;
+}
+.seccionBotones{
+	text-align: center;
+    margin-top: 40px;
+}
+
+.botonesAcciones {
+	width: 150px;
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #3498db;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.3s;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .botonesAcciones:hover {
+	background-color: #2980b9;
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+	transform: translateY(-2px);
+  }
+  .botonesAcciones:active {
+	background-color: #20729f;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transform: translateY(1px);
+  }
+  .botones{
+	margin:10px 0;	
+  }
+  .cajaBotones{
+	border: solid 0.25px;
+    height: 50px;
+    width: 200px;
+    font-size: 12px;
+    margin-top: 7px;
+    padding-top: 13px;
+  }
+  
+  
+  .aEliminar{
+	background-color: red;
+	color:white;
+  }
+  .error{
+	color: red;
+  }
