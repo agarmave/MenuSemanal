@@ -24,7 +24,6 @@
 					<button class="flecha" id="botonMostrarCenas" onclick="mostrarColumnaPlatos('columnaPlatosCenas','botonMostrarCenas','botonOcultarCenas')" style="display: none;">▼</button>
 				</h2>
 				<div id="columnaPlatosCenas" class="columnaPlatos"></div>
-				<div id="columnaPlatosOcultos" style="display: none;"></div>
 			</div>
 			<div id="seccionCalendario" class="seccionCalendario col-sm-10">
 				<!--Aquí irán las cajas de los días de la semana -->
@@ -94,10 +93,38 @@
 						</div>
 					</div>
 				</div>
-				<div id="lista de la compra">
-					<div id="listaDeLaCompra" class="listaDeLaCompra">
-						<h2>Lista de la compra</h2>
-						<div id="cajaListaCompra"></div>
+				<div class="row">					
+					<div class="col-sm-6">
+						<div id="listaDeLaCompra" class="listaDeLaCompra">
+							<h2>Lista de la compra</h2>
+							<div id="cajaListaCompra"></div>
+						</div>
+					</div>
+					<div id="botones" class="seccionBotones col-sm-6">
+						<div class="botones">
+							<button class="botonesAcciones" id="botonBorrarCalendario" onclick="borrarCalendario()">Limpiar</button>
+						</div>
+						<div class="botones">
+							<button class="botonesAcciones" id="botonAnadirPlato" onclick="anadirPlato()">Añadir plato</button>
+						</div>
+						<div class="botones">
+							<button class="botonesAcciones" id="botonEditarPlato" onclick="editarPlato()">Editar plato</button>
+						</div>
+						<div class="botones">
+							<button class="botonesAcciones" id="botonMostrarEliminarPlato" onclick="mostrarBorrarPlato()">Eliminar plato</button>
+						</div>
+						<div class="row oculto" id="eliminarPlato">		
+							<div class="col-sm-5" style="font-size: 12px;">
+								<div>
+									<span>Coloca el plato en la caja</span>
+									<div class="cajaBotones" id="cajaEliminar"></div>
+									<span id="errorEliminar" class="oculto error">No hay ningún plato en la caja</span>
+								</div>
+							</div>
+							<div class="botones col-sm-7" style="text-align: left; padding-top:18px;" >
+								<button class="botonesAcciones" id="botonEliminarPlato" onclick="borrarPlato()">Eliminar</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

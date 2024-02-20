@@ -7,18 +7,7 @@ function comprobarSiEstaEnCalendario(element,accion){
     var elementosComida = document.getElementsByClassName("comida");
     var elementosCena = document.getElementsByClassName("cena");
   
-    // Función para verificar la superposición
-    function seSuperpone(elemento1, elemento2) {
-        var rect1 = elemento1.getBoundingClientRect();
-        var rect2 = elemento2.getBoundingClientRect();
-  
-        return !(
-            rect1.right < rect2.left ||
-            rect1.left > rect2.right ||
-            rect1.bottom < rect2.top ||
-            rect1.top > rect2.bottom
-        );
-    }
+    
   
     // Verifica si el elemento absoluto se superpone con algún elemento de clase "comida"
     var seSuperponeAComida = false;
@@ -55,9 +44,35 @@ function comprobarSiEstaEnCalendario(element,accion){
       } else {
         console.log("Plato no encontrado.");
       }
+      return true;
+    }
+    else{
+        return false;
     }
   }
   //FIN Función comprobar si está encima del calendario
+function comprobarSiEstaEnEliminar(element,accion){
+    var elementoAbsoluto = element;
+    var cajaEliminar = document.getElementById("cajaEliminar");
+    if (accion == "soltar"){
+        if(seSuperpone(elementoAbsoluto, cajaEliminar)){
+            elementoAbsoluto.classList.add("aEliminar");
+        }
+    }
+    if ((accion=="coger")&&elementoAbsoluto.classList.contains("aEliminar")){
+        elementoAbsoluto.classList.remove("aEliminar");
+    }
+}
+// Funcion comprobar si está en las columnas de platos
+function comprobarSiEstaEnColumnasPlatos(element){
+    var elementoAbsoluto = element;
+    var columnaPlatosComidas = document.getElementById("columnaPlatos");
+    var columnaPlatosCenas = document.getElementById("columnaPlatosCenas");
+    if (seSuperpone(elementoAbsoluto, columnaPlatosComidas)||seSuperpone(elementoAbsoluto, columnaPlatosCenas)) {
+        elementoAbsoluto.style = null;
+    }
+}
+//FIN Funcion comprobar si está en las columnas de platos
   // Función para agregar o quitar un plato de la lista de compra
 function gestionarPlatoEnLista(plato, accion) {
     var ingredientesPlato = buscarIngredientesPorNombre(plato);
@@ -116,3 +131,17 @@ function actualizarListaCompra() {
     listaCompra.appendChild(elementoLista);
   }
   //FIN Función para actualizar la lista en el HTML
+
+  //Función para limpiar el calendario
+  function borrarCalendario(){
+    for (var plato in listaPlatos){
+        console.log(listaPlatos[plato]);
+        gestionarPlatoEnLista(listaPlatos[plato].nombre, "quitar");
+    }
+    var todosLosPlatos = document.querySelectorAll(".plato");
+    todosLosPlatos.forEach(element => {
+        element.style= null;
+    });
+  }
+  //FIN Función para limpiar el calendario
+  
