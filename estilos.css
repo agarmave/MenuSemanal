@@ -17,7 +17,6 @@ h2{
 	overflow-y: auto; 
 }
 .seccionCalendario{
-
 }
 .plato{
 	border: solid 1px;
@@ -146,3 +145,4 @@ h2{
   .error{
 	color: red;
   }
+  
